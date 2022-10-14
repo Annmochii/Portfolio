@@ -82,6 +82,9 @@ nav ul li a{
 nav ul li a:hover{
     border-bottom: 3px solid var(--texto);
   }
+div#menu{
+    display: none;
+  }
 /* sobre mim */
 div#sobremim{
     background-color: var(--secuntaria);
@@ -370,7 +373,7 @@ input[type=text].form, select.form{
 input[type=text].form{
     width: 404px;
   }
-input[type=text].form :placeholder{
+input[type=text].form::placeholder, textarea::placeholder{
     color:rgba( 255, 255, 255, 0.6);
   }
 select.form{

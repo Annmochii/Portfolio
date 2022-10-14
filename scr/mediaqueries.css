@@ -57,9 +57,30 @@
             padding-right: 16px;
             padding-left: 16px;
         }
+        section h1{
+            font: 26px;
+        }
         /* Header */
         header{
             height: 64px;
+        }
+        div#hero h1{
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        nav ul{
+            display: none;
+        }
+        div#menu{
+            display: flex;
+            background-color: var(gray);
+            background-image: url("./imgs/hamburger_button_menu_icon_155296.png");
+            background-size: 100%;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 16px;
         }
         /* Sobre mim */
         section#sobre{
@@ -105,6 +126,12 @@
             border-width: 10px 10px 10px 0;
             border-color: transparent var(--secuntaria) transparent transparent;
         }
+        div.content h2{
+            font-size: 24;
+        }
+        div.content p{
+            font-size: 16px;
+        }
         .left::after, .right::after {
             left: 15px;
         }
@@ -120,18 +147,38 @@
         div.portex{
             height: 249px;
         }
+        div#veja a h3{
+            font-size: 18px;
+        }
+        div#vejaarrow{
+            width: 10px;
+            height: 10px;
+        }
         /* Contato */
         section#contato{
             margin-block: 72px;
         }
+        input[type=text].form, select.form, textarea.form{
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        input[type=text].form, select.form{
+            height: 48px;
+        }
         input[type=submit].buttom{
             width: 100%;
         }
+        /* Footer */
+        footer{
+            flex-direction: column;
+            justify-content: center;
+            margin-block :28px;
+            margin-inline: 16px;
+        }
+        h6#developedby{
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 12px;
+        }
     }
 
-
-/* 
-Media queries:
-- 1145 px - tablet *
-- 479 px - mobile *
-*/
