@@ -4,5 +4,4 @@ Feito para a disciplina de Construção de Software para Web no curso de gradua�
 ## Metas:
 * @media:
 * Adicionar novo media query para telas entre 767px e 479px de largura
-* Configurar melhor as fontes para telas com menos de 479px de largura
 * Configurar um menu hamburguer para telas com menos de 479px de largura
