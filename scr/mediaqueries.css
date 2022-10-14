@@ -1,0 +1,137 @@
+
+/* Media queries - telas com menos de 1145px de largura */
+@media screen and (max-width: 1145px) {
+        main section, header, footer{
+            width: 688px;
+        }
+        /* Sobre mim */
+        section#sobre{
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        img#demo{
+            width: 688px;
+            margin-right: 0px;
+            margin-top: 96px;
+        }
+        h1#sobre{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            padding-bottom: 15px;
+        }
+        h5#sobre{
+            text-align: center;
+            padding-inline: 24px;
+        }
+        /* Timeline */
+        .left {
+            padding-inline: 0px 40px;
+        }
+        .right {
+            padding-inline: 40px 0px;
+        }
+        .container{
+            width: 44%
+        }
+        /* Portfolio */
+        div.portex{
+            height: 249px;
+        }
+        /* Contato */
+        div#form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        input[type=text].form, select.form, textarea.form{
+            width: 100%;
+        }
+    }
+/* Media queries - telas com menos de 479px de largura */
+@media screen and (max-width: 479px) {
+        main section, header, footer{
+            width: 100%;
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+        /* Header */
+        header{
+            height: 64px;
+        }
+        /* Sobre mim */
+        section#sobre{
+            margin-block: 72px;
+        }
+        img#demo{
+                display: none;
+        }
+        h1#sobre{
+            font-size: 34.8px;
+            padding-inline: 24px;
+        }
+        h5#sobre{
+            font-size: 16px;
+            padding-inline: 24px;
+        }
+        div#sobre ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-inline: 24px;
+        }
+        /* Timeline */
+        section#instrucao{
+            margin-block: 72px;
+        }
+        div#timeline::after {
+            left: 31px;
+        }
+        .container {
+            width: 80%;
+        }
+        .left {
+            padding-inline: 70px 0px;
+        }
+        .right {
+            left: 0%;
+            padding-inline: 70px 0px;
+        }
+        .container::before {
+            left: 60px;
+            border: medium solid var(--secuntaria);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--secuntaria) transparent transparent;
+        }
+        .left::after, .right::after {
+            left: 15px;
+        }
+        /* Portfolio */
+        section#portfolio{
+            margin-block: 72px 35px;
+        }
+        div.portfolioex{
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin-bottom: 27px;
+        }
+        div.portex{
+            height: 249px;
+        }
+        /* Contato */
+        section#contato{
+            margin-block: 72px;
+        }
+        input[type=submit].buttom{
+            width: 100%;
+        }
+    }
+
+
+/* 
+Media queries:
+- 1145 px - tablet *
+- 479 px - mobile *
+*/
