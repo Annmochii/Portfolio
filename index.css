@@ -62,12 +62,12 @@ h1#hero{
   }
 nav{
     margin: 10px;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
   }
 nav ul{
     display: flex;
-    list-style:none;
+    list-style: none;
   }
 nav ul li a{
     font-family: 'Montserrat', sans-serif;
@@ -79,8 +79,20 @@ nav ul li a{
     padding-inline: 20px;
     padding-block: 37px 34px;
   }
-nav ul li a:hover{
-    border-bottom: 3px solid var(--texto);
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--texto);
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    transition: 0.5s;
+    margin-top: 34px;
+    margin-bottom: -34px;
+  }
+nav ul li:hover::after{
+    width: 100%;
   }
 div#menu{
     display: none;
