@@ -3,138 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Anna Maria Lima | Full-Stack Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeRecycle</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="webcontainer" id="header">
+    <div class="webcontainer" id="header"> <!--Barra de navegação-->
         <header>
             <div id="hero">
-                <h1 id="hero">AnnMochii</h1>
+                <div id="headerlogo"></div> <!--logo-->
             </div>
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#portfolio">Portifólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><h5 href="#about">Sobre</h5></li>
+                    <li><h5 href="#news">Notícias</h5></li>
+                    <li><h5 href="faq.html">FAQ</h5></li>
+                    <li><h5 href="#footer">Contato</h5></li>
                 </ul>
-                <div id="menu"></div>
+                <button type="button" class="yellowneutral" id="navlogin"><a>Log In</a></button> 
+                <button type="button" class="special" id="navsignup"><a>Cadastre-se</a></button>  
+                <div id="menu"></div> <!--menu hamburguer-->
             </nav>
         </header>
     </div>
     <main>
-        <div class="webcontainer" id="sobremim">
+        <div class="webcontainer" id="firstview"> <!--Primeira página-->
+            <section id="firstview">
+                <h2 id="welcome">Bem vindo à</h3>
+                <h1 id="hero">WeRecycle</h1>
+                <h3 id="description">Seu novo meio de ajudar o planeta de casa!</h5>
+                    <button type="button" class="positive" id="mainsignup">Cadastre-se</button>  
+                <div id="circle"></div> <!--círculo atrás do mascote-->
+                <div id="mascote"></div> <!--mascote-->
+                <div class="ideas">
+                    <div class="idea"> <!--primeira ideia do projeto-->
+                        <div class="icon" id="icon1"></div>
+                        <h2 class="idea"><!--texto--></h2>
+                    </div>
+                    <div class="idea"> <!--segunda ideia do projeto-->
+                        <div class="icon" id="icon2"></div>
+                        <h2 class="idea"><!--texto--></h2>
+                    </div>
+                    <div class="idea"> <!--terceira ideia do projeto-->
+                        <div class="icon" id="icon3"></div>
+                        <h2 class="idea"><!--texto--></h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="webcontainer" id="about"> <!--Sobre nós-->
             <section id="sobre">
-                <img id="demo" src="imgs\2d519980aadf24b129a72cc1d33c0e60.jpg" alt="Foto Demonstração">
-                <div id="sobre">
-                    <h1 id="sobre">Full-Stack Designer</h1>
-                    <h5 id="sobre">Me chamo Anna Maria Lima, sou uma designer e programadora especialista na criação de interfaces. Estou cursando Ciências da Computação na Universidade de Vila Velha e crio aplicativos e sites do zero para empresas e startups!</h5>
-                    <ul>
-                        <li><a href="#contato">Fale comigo!</a></li>
-                        <li><a href="#portfolio">Veja meus projetos</a></li>
-                    </ul>
+                <h1 id="aboutus">Sobre nós</h1>
+                <p><!--texto--></p>
+                <div id="aboutimg"></div> <!--foto-->
+            </section>
+        </div>
+        <div class="webcontainer" id="news"> <!--Notícias-->
+            <section id="noticias">
+                <h1 id="newstitle">Notícias</h1>
+                <div class="arrowcontainer newarrowcontainer" id="lnewarrowcontainer"><div class="newarrow leftarrow" id="lnewsarrow"></div></div>
+                <div id="newscarrossel">
+                    <div class="report" id="rep1">  <!--reportagem 1-->
+                        <div class="reportimg" id="repimg1"></div> <!--foto da reportagem 1-->
+                        <h3 class="topic">Informativo</h3>
+                        <h2 class="headline">Para onde vai seu lixo?</h2>
+                        <p class="description">Descubra para onde seu lixo é transportado após a coleta</p>
+                        <a><button type="button" class="special show"> <!--botão veja mais-->
+                            <h3>veja mais</h3>
+                            <div class="showarrow"></div>
+                        </button></a>
+                    </div>
+                    <div class="report" id="rep2">  <!--reportagem 2-->
+                        <div class="reportimg" id="repimg2"></div> <!--foto da reportagem 2-->
+                        <h3 class="topic">Reciclagem</h3>
+                        <h2 class="headline">Recicle em casa</h2>
+                        <p class="description">Ideias para criar decorações com materiais recicláveis no conforto de sua casa!</p>
+                        <a><button type="button" class="special show"> <!--botão veja mais-->
+                            <h3>veja mais</h3>
+                            <div class="showarrow"></div>
+                        </button></a>
+                    </div>
+                    <div class="report" id="rep3">  <!--reportagem 3-->
+                        <div class="reportimg" id="repimg3"></div> <!--foto da reportagem 3-->
+                        <h3 class="topic">Tecnologia</h3>
+                        <h2 class="headline">Vantagens do Eletronic Recycling</h2>
+                        <p class="description">A tecnologia está transformando o mundo!<br>Conheça as vantagens da reciclagem eletrônica.</p>
+                        <a><button type="button" class="special show"> <!--botão veja mais-->
+                            <h3>veja mais</h3>
+                            <div class="showarrow"></div>
+                        </button></a>
+                    </div>
+                    <div class="report" id="rep4"> <!--reportagem 4-->
+                        <div class="reportimg" id="repimg4"></div> <!--foto da reportagem 4-->
+                        <h3 class="topic">Comunidade</h3>
+                        <h2 class="headline">Evento: Limpe a Praia!</h2>
+                        <p class="description">Venha participar do evento comemorativo de 1 ano da WeRecycle. Nos dias 2 e 3 de Julho a WeRecycle e seus membros estarão na praia do Morro em Guarapa... </p>
+                        <a><button type="button" class="special show"> <!--botão veja mais-->
+                            <h3>veja mais</h3>
+                            <div class="showarrow"></div>
+                        </button></a>
+                    </div>
+                    <div class="arrowcontainer newarrowcontainer" id="rnewarrowcontainer"><div class="newarrow rightarrow" id="rnewsarrow"></div></div>
                 </div>
             </section>
         </div>
-        <div class="webcontainer" id="grauinstrucao">
-            <section id="instrucao">
-                <h1>Grau de Instrução</h1>
-                <div id="timeline">
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2017</h2>
-                            <p>Curso de inglês nível básico</p>
+        <div class="webcontainer" id="team"> <!--Conheça nossa equipe!-->
+            <section id="equipe">
+                <div id="teambox">
+                    <div id="teamcomponents">
+                        <h1 id="meet">Conheça nossa equipe!</h1>
+                        <div id="membercomponents">
+                            <div class="team" id="analaura">
+                                <div class="memberinfo">
+                                    <h2 class="name" id="aura">Ana Laura Brito</h2>
+                                    <h4 class="role">Estudante de Ciências da Computação</h4>
+                                    <p class="bio" id="aura">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p> <!--bio da Aura-->
+                                    <br>
+                                </div>
+                                <a href="https://aurahtml.github.io/PortfolioWEB/" target="_blank"><button type="button" class="positive know" id="knowaura">Saiba mais</button></a> 
+                            </div>
+                            <div class="team" id="annamaria">
+                                <div class="memberinfo">
+                                    <h2 class="name" id="anna">Anna Maria Lima</h2>
+                                    <h4 class="role">Estudante de Ciências da Computação</h4>
+                                    <p class="bio" id="anna">Sou uma designer e programadora especialista na criação de interfaces. Estudo Ciências da Computação na Universidade de Vila Velha e UX e UI Design na Escola Britânica de Artes Criativas.</p> <!--bio da Anna-->
+                                    <br>
+                                </div>
+                                <a href="https://annmochii.github.io/Portfolio/" target="_blank"><button type="button" class="positive know" id="knowanna">Saiba mais</button></a>
+                            </div>
+                            <div class="team" id="eloisa">
+                                <div class="memberinfo">
+                                    <h2 class="name" id="elo">Eloisa Pajehú</h2>
+                                    <h4 class="role">Estudante de Ciências da Computação</h4>
+                                    <p class="bio" id="elo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p> <!--bio da Eloisa-->
+                                    <br>
+                                </div>
+                                <a href="https://eloisapsl.github.io/ConWeb/" target="_blank"><button type="button" class="positive know" id="knowelo">Saiba mais</button></a>  
+                            </div>
+                            <div class="team" id="raquel">
+                                <div class="memberinfo">
+                                    <h2 class="name" id="rach">Raquel Rigoni</h2>
+                                    <h4 class="role">Estudante de Ciências da Computação</h4>
+                                    <p class="bio" id="rach">Tenho 21 anos sou estudante na Universidade de Vila Velha com foco principal em gerenciamento de dados e desenvolvimento de software.</p><br> <!--bio da Raquel-->
+                                    <br>
+                                </div>
+                                <a href="https://raqs-bot.github.io/Portfolio/" target="_blank"><button type="button" class="positive know" id="knowrach">Saiba mais</button></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2018</h2>
-                            <p>Curso de inglês nível pré-intermediário</p>
-                        </div>
-                    </div>
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2020</h2>
-                            <p>Curso de inglês intermediário superior</p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2021</h2>
-                            <p>Curso técnico em edificações</p>
-                        </div>
-                    </div>
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2023</h2>
-                            <p>Curso profissionalizante em Full Stack Designer</p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2026</h2>
-                            <p>Graduação em Ciências da Computação</p>
-                        </div>
-                    </div>
+                    <div class="arrowcontainer" id="carrosselarrowcontainer"><div class="leftarrow" id="carrosselarrow"></div></div>
                 </div>
-            </section>
-        </div>
-        <div class="webcontainer" id="portfolio">
-            <section id="portfolio">
-                <h1>Portifólio</h1>
-                <div class="portfolioex">
-                    <div class="portex" id="exa"></div>
-                    <div class="portex" id="exb"></div>
-                    <div class="portex" id="exc"></div>
-                    <div class="portex" id="exd"></div>
+                <div id="pictures">
+                    <div class="pics" id="aura"></div> <!--foto da Aura-->
+                    <div class="pics" id="anna"></div> <!--foto da Anna-->
+                    <div class="pics" id="elo"></div> <!--foto da Eloisa-->
+                    <div class="pics" id="rach"></div> <!--foto da Raquel-->
                 </div>
-                <div id="veja">
-                    <a href="https://www.behance.net/annamalimada">
-                        <h3>veja mais</h3>
-                        <div id="vejaarrow"></div>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <div class="webcontainer" id="contato">
-            <section id="contato">
-                <h1>Contato</h1>
-                <form action="/action_page.php">
-                    <div id="form">
-                        <input type="text" class="form" id="nome" placeholder="Nome" required>
-                        <input type="text" class="form" id="email" placeholder="E-mail" required>
-                        <input type="text" class="form" id="prazo" placeholder="Prazo">
-                        <input type="text" class="form" id="orcamento" placeholder="Orçamento">
-                    </div>
-                    <br>
-                    <select class="form" id="tipo" required>
-                        <option value=" ">Tipo de Serviço</option>
-                        <option value="WWW">Criação de Website</option>
-                        <option value="UI">Design de Interface</option>
-                        <option value="UX">Serviço de UX Design</option>
-                        <option value="consultoria">Consultoria de Design</option>
-                    </select><br><br>
-                    <textarea class="form" id="mensagem" rows="10" cols="30" placeholder="Me conte mais sobre o seu projeto..."></textarea>
-                    <br><br>
-                    <a href="./scr/index.html"><input type="submit" class="buttom" value="Enviar mensagem"></a>
-                </form>
             </section>
         </div>
     </main>
     <div class="webcontainer" id="footer">
         <footer>
-            <h6 id="developedby">Copyright 2022. Anna Maria Lima - Full-Stack Designer</h6>
-            <div class="redes">
-                <a href="https://www.instagram.com/annmochii/"><div class="rede" id="instagram"></div></a>
-                <a href="https://www.twitter.com/annmochii/"><div class="rede" id="twitter"></div></a>
-                <a href="https://www.linkedin.com/in/anna-maria-da-silva-816a9b239/"><div class="rede" id="linkedin"></div></a>
+            <h1 id="contact">Contato</h1>
+            <div class="footerdiv" id="footerabout"> <!--sobre-->
+                <div id="footerlogo"></div>
+                <p>A WeRecycle é um projeto criado com intuito educativo por uma instituição privada e seus alunos, e tem como objetivo aprimorar o conhecimento adquirido ao longo do primeiro semestre do curso de Ciência da Computação.</p>
+            </div>
+            <div class="footerdiv" id="socials"> <!--redes sociais-->
+                <h3 class="footertitle">Redes sociais</h3>
+                <div class="redesocial">
+                    <div id="facebookicon"></div> <!--ícone do facebook-->
+                    <h3 class="clickable" id="facebooklink">WeRecycle</h3>
+                </div>
+                <div class="redesocial">
+                    <div id="instagramicon"></div> <!--ícone do instagram-->
+                    <h3 class="clickable" id="instagramlink">WeRecycle</h3>
+                </div>
+                <div class="redesocial">
+                    <div id="twittericon"></div> <!--ícone do twitter-->
+                    <h3 class="clickable" id="twitterlink">WeRecycle</h3>
+                </div>
+                <div class="redesocial">
+                    <div id="emailicon"></div> <!--ícone do email-->
+                    <h3 id="email">WeRecycle</h3>
+                </div>
+            </div>
+            <div class="footerdiv" id="footeraddress"> <!--endereço-->
+                <h3 class="footertitle">Endereço</h3>
+                <div>
+                    <div id="pinicon"></div> <!--ícone do endereço-->
+                    <p>Av. Comissário José Dantas de Mello, 21. <br> Boa Vista - Vila Velha ES. <br> CEP 29102-902.</p>
+                </div>
+            </div>
+            <div class="footerdiv" id="footercontact"> <!--contato-->
+                <h3 class="footertitle">Contato</h3>
+                <p>Entre em contato conosco para dúvidas, sugestões e outras informações!</p>
+                <form action="/action_page.php">
+                    <div id="form">
+                        <input type="text" class="form" id="nome" placeholder="Nome" required>
+                        <input type="text" class="form" id="sobrenome" placeholder="Sobrenome" required><br>
+                        <input type="text" class="form" id="email" placeholder="E-mail" required><br>
+                    </div>
+                    <br>
+                    <textarea class="form" id="mensagem" rows="10" cols="30" placeholder="Nos conte como podemos ajudar..."></textarea>
+                    <br><br>
+                    <a href="./scr/index.html"><input type="submit" class="buttom" value="Enviar mensagem"></a>
+                </form>
             </div>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
